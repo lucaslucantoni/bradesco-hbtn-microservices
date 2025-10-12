@@ -1,7 +1,8 @@
-Microsserviços são uma abordagem de desenvolvimento de software que divide uma aplicação em pequenos serviços independentes, cada um responsável por uma função específica do sistema. Cada microsserviço é executado de forma autônoma, podendo ser desenvolvido, implantado e escalado separadamente.
-
-Na arquitetura monolítica, toda a aplicação é construída como um único bloco, em que os módulos estão fortemente acoplados e qualquer alteração exige a atualização do sistema completo. Já na arquitetura de microsserviços, o sistema é composto por diversos serviços independentes que se comunicam entre si, tornando o desenvolvimento mais flexível e escalável.
-
-Entre os principais benefícios da arquitetura de microsserviços estão: (1) facilidade de escalabilidade, pois cada serviço pode ser dimensionado conforme a demanda; (2) maior resiliência, já que a falha em um serviço não compromete todo o sistema; e (3) agilidade no desenvolvimento e implantação contínua, permitindo que equipes trabalhem em serviços diferentes simultaneamente.
-
-Os microsserviços se comunicam principalmente de duas formas: síncrona, quando a resposta é imediata (como em APIs REST e gRPC), e assíncrona, quando a comunicação ocorre por meio de mensagens enviadas a filas ou brokers (como RabbitMQ ou Kafka), garantindo maior desacoplamento entre os serviços.
+Microsserviços são um estilo de arquitetura de software que estrutura uma aplicação como uma coleção de serviços pequenos e independentes. Ao contrário da arquitetura monolítica, onde todos os componentes estão unificados em um único bloco, os microsserviços permitem que cada serviço seja desenvolvido, implantado e escalado de forma independente. Isso contrasta com o modelo monolítico, que é mais simples de implantar inicialmente, mas se torna difícil de manter e escalar com o tempo.
+Os benefícios dos microsserviços incluem:
+Escalabilidade: Cada serviço pode ser escalado independentemente para lidar com a demanda, otimizando o uso de recursos.
+Resiliência: Uma falha em um serviço isolado não derruba toda a aplicação, melhorando a tolerância a falhas.
+Tecnologias Diversificadas: Permite o uso de diferentes linguagens de programação e tecnologias para cada serviço, escolhendo a mais adequada para cada necessidade.
+A comunicação entre microsserviços ocorre por meio de interfaces bem definidas, geralmente utilizando APIs leves. Existem dois tipos principais de comunicação:
+Comunicação Síncrona: Baseada em requisições e respostas, como acontece em chamadas HTTP/REST.
+Comunicação Assíncrona: Utiliza filas de mensagens ou barramentos de eventos para desacoplar os serviços, como com o uso de RabbitMQ.
